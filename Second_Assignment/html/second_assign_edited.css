@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box;
+
+  font-size: 11px;
+
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgb(234, 230, 238);
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(196, 181, 154);
+}
+
+
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: red;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 24px;
+}
+
+
+.nav-list a {
+  display: block;
+  font-size: 23px;
+  padding: 20px;
+}
+
+.nav-list a:hover {
+  background: rgb(40, 52, 155);
+}
+
+
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: yellowgreen;
+
+}
+
+.welcome-section > p {
+  font-size: 30px;
+  font-weight: 200;
+  font-style: italic;
+  color: red;
+}
+
+
+.websites-section-header {
+  max-width: 640px;
+  margin: 0 auto 60px auto;
+  border-bottom: 2px solid goldenrod;
+}
+
+
+.websites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 40px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 30.625em) {
+  .websites-section {
+    padding: 6rem 1rem;
+  }
+
+}
+
+.website {
+  background: darkolivegreen;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: #303841;
+  transition: color 0.3s ease-out;
+}
+
+.website:hover .code {
+  color: #ff7f50;
+}
+
+.website-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.website-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
